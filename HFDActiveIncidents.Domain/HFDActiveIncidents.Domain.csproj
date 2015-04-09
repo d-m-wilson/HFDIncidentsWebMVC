@@ -48,8 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActiveIncidentRecord.cs" />
-    <Compile Include="ActiveIncidentResult.cs" />
     <Compile Include="CustomModelPartials\ArchivedIncident.cs" />
     <Compile Include="CustomModelPartials\HFDActiveIncidentsContext.cs" />
     <Compile Include="GlobalSuppressions.cs" />
