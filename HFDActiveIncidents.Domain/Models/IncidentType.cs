@@ -5,12 +5,6 @@ namespace HFDActiveIncidents.Domain.Models
 {
     public partial class IncidentType
     {
-        public IncidentType()
-        {
-            this.ActiveIncidents = new List<ActiveIncident>();
-            this.ArchivedIncidents = new List<ArchivedIncident>();
-        }
-
         public long Id { get; set; }
         public long AgencyId { get; set; }
         public string Name { get; set; }

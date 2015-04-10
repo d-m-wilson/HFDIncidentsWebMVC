@@ -21,11 +21,6 @@ namespace HFDActiveIncidents.Domain.Models
 {
     public partial class Agency
     {
-        public Agency()
-        {
-            this.IncidentTypes = new List<IncidentType>();
-        }
-
         public long Id { get; set; }
         public string Name { get; set; }
         public string Code { get; set; }
