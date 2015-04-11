@@ -16,26 +16,50 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HFDActiveIncidents.Domain.Models
 {
     public partial class ArchivedIncident
     {
         public long Id { get; set; }
+
+        [Display(Name="Retrieved")]
         public System.DateTime RetrievedDT { get; set; }
+
         public string Address { get; set; }
+
+        [Display(Name = "Cross Street")]
         public string CrossStreet { get; set; }
+
         public string KeyMap { get; set; }
+
         public Nullable<double> Latitude { get; set; }
+        
         public Nullable<double> Longitude { get; set; }
+
         public bool CombinedResponse { get; set; }
+
+        [Display(Name = "Call Opened")]
         public Nullable<System.DateTime> CallTimeOpened { get; set; }
+
         public Nullable<long> IncidentTypeId { get; set; }
+
+        [Display(Name = "Alarm Level")]
         public int AlarmLevel { get; set; }
+
+        [Display(Name = "# Units")]
         public int NumberOfUnits { get; set; }
+
+        [Display(Name = "Units Responding")]
         public string Units { get; set; }
+
+        [Display(Name = "Last Reported")]
         public System.DateTime LastSeenDT { get; set; }
+
+        [Display(Name = "Archived")]
         public System.DateTime ArchivedDT { get; set; }
+
         public virtual IncidentType IncidentType { get; set; }
     }
 }
