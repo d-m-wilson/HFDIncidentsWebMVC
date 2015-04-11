@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="CustomModelPartials\ArchivedIncident.cs" />
     <Compile Include="CustomModelPartials\HFDActiveIncidentsContext.cs" />
+    <Compile Include="IIncidentDataSource.cs" />
     <Compile Include="Models\ActiveIncident.cs" />
     <Compile Include="Models\Agency.cs" />
     <Compile Include="Models\ArchivedIncident.cs" />

@@ -20,7 +20,7 @@ using HFDActiveIncidents.Domain.Models.Mapping;
 
 namespace HFDActiveIncidents.Domain.Models
 {
-    public partial class HFDActiveIncidentsContext : DbContext
+    public partial class HFDActiveIncidentsContext : DbContext, IIncidentDataSource
     {
         static HFDActiveIncidentsContext()
         {
@@ -47,6 +47,16 @@ namespace HFDActiveIncidents.Domain.Models
             modelBuilder.Configurations.Add(new HFDServiceLogMap());
             //modelBuilder.Configurations.Add(new HFDServiceSessionMap());
             modelBuilder.Configurations.Add(new IncidentTypeMap());
+        }
+
+        System.Linq.IQueryable<ArchivedIncident> IIncidentDataSource.ArchivedIncidents
+        {
+            get { return ArchivedIncidents.Include(ai => ai.IncidentType.Agency); }
+        }
+
+        System.Linq.IQueryable<IncidentType> IIncidentDataSource.IncidentTypes
+        {
+            get { return IncidentTypes.Include(it => it.Agency); }
         }
     }
 }
