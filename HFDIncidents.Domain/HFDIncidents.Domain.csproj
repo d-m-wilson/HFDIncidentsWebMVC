@@ -7,8 +7,8 @@
     <ProjectGuid>{D073A03C-5FBD-445D-AD7B-DC8A63FDB215}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HFDActiveIncidents.Domain</RootNamespace>
-    <AssemblyName>HFDActiveIncidents.Domain</AssemblyName>
+    <RootNamespace>HFDIncidents.Domain</RootNamespace>
+    <AssemblyName>HFDIncidents.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

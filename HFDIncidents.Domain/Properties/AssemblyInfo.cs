@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HFDActiveIncidents.Domain")]
+[assembly: AssemblyTitle("HFDIncidents.Domain")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HFDActiveIncidents.Domain")]
-[assembly: AssemblyCopyright("Copyright © 2014 David M. Wilson")]
+[assembly: AssemblyProduct("HFDIncidents.Domain")]
+[assembly: AssemblyCopyright("Copyright © 2015 David M. Wilson")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

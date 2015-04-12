@@ -1,5 +1,5 @@
-﻿// HFD Active Incidents
-// Copyright © 2014 David M. Wilson
+﻿// HFD Incidents
+// Copyright © 2015 David M. Wilson
 // https://twitter.com/dmwilson_dev
 //
 // This program is free software: you can redistribute it and/or modify
@@ -16,7 +16,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 
-namespace HFDActiveIncidents.Domain.Models
+namespace HFDIncidents.Domain.Models
 {
     public partial class HFDActiveIncidentsContext
     {

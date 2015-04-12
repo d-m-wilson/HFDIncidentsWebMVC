@@ -1,5 +1,5 @@
-// HFD Active Incidents
-// Copyright © 2014 David M. Wilson
+// HFD Incidents
+// Copyright © 2015 David M. Wilson
 // https://twitter.com/dmwilson_dev
 //
 // This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
-namespace HFDActiveIncidents.Domain.Models.Mapping
+namespace HFDIncidents.Domain.Models.Mapping
 {
     public class AgencyMap : EntityTypeConfiguration<Agency>
     {
