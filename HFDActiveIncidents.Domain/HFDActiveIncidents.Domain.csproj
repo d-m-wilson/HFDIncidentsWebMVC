@@ -56,6 +56,7 @@
     <Compile Include="Models\Agency.cs" />
     <Compile Include="Models\ArchivedIncident.cs" />
     <Compile Include="Models\HFDActiveIncidentsContext.cs" />
+    <Compile Include="Models\HFDIncidentsReadOnlyContext.cs" />
     <Compile Include="Models\HFDServiceLog.cs" />
     <Compile Include="Models\HFDServiceSession.cs" />
     <Compile Include="Models\IncidentType.cs" />
