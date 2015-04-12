@@ -36,7 +36,6 @@ namespace HFDActiveIncidents.Domain.Models
         public DbSet<Agency> Agencies { get; set; }
         public DbSet<ArchivedIncident> ArchivedIncidents { get; set; }
         public DbSet<HFDServiceLog> HFDServiceLogs { get; set; }
-        //public DbSet<HFDServiceSession> HFDServiceSessions { get; set; }
         public DbSet<IncidentType> IncidentTypes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -45,7 +44,6 @@ namespace HFDActiveIncidents.Domain.Models
             modelBuilder.Configurations.Add(new AgencyMap());
             modelBuilder.Configurations.Add(new ArchivedIncidentMap());
             modelBuilder.Configurations.Add(new HFDServiceLogMap());
-            //modelBuilder.Configurations.Add(new HFDServiceSessionMap());
             modelBuilder.Configurations.Add(new IncidentTypeMap());
         }
 
