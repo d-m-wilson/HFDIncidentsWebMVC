@@ -58,7 +58,6 @@
     <Compile Include="Models\HFDActiveIncidentsContext.cs" />
     <Compile Include="Models\HFDIncidentsReadOnlyContext.cs" />
     <Compile Include="Models\HFDServiceLog.cs" />
-    <Compile Include="Models\HFDServiceSession.cs" />
     <Compile Include="Models\IncidentType.cs" />
     <Compile Include="Models\Mapping\ActiveIncidentMap.cs" />
     <Compile Include="Models\Mapping\AgencyMap.cs" />
