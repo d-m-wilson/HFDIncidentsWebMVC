@@ -20,15 +20,15 @@ using HFDIncidents.Domain.Models.Mapping;
 
 namespace HFDIncidents.Domain.Models
 {
-    public partial class HFDActiveIncidentsContext : DbContext, IIncidentDataSource
+    public partial class HFDIncidentsContext : DbContext, IIncidentDataSource
     {
-        static HFDActiveIncidentsContext()
+        static HFDIncidentsContext()
         {
-            Database.SetInitializer<HFDActiveIncidentsContext>(null);
+            Database.SetInitializer<HFDIncidentsContext>(null);
         }
 
-        public HFDActiveIncidentsContext()
-            : base("Name=HFDActiveIncidentsContext")
+        public HFDIncidentsContext()
+            : base("Name=HFDIncidentsContext")
         {
         }
 

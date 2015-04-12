@@ -18,7 +18,7 @@ using System;
 
 namespace HFDIncidents.Domain.Models
 {
-    public partial class HFDActiveIncidentsContext
+    public partial class HFDIncidentsContext
     {
 
         public void LogException(int nLevel, string strSource, string strMessage, Exception exception)

@@ -50,12 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomModelPartials\ArchivedIncident.cs" />
-    <Compile Include="CustomModelPartials\HFDActiveIncidentsContext.cs" />
+    <Compile Include="CustomModelPartials\HFDIncidentsContext.cs" />
     <Compile Include="IIncidentDataSource.cs" />
     <Compile Include="Models\ActiveIncident.cs" />
     <Compile Include="Models\Agency.cs" />
     <Compile Include="Models\ArchivedIncident.cs" />
-    <Compile Include="Models\HFDActiveIncidentsContext.cs" />
+    <Compile Include="Models\HFDIncidentsContext.cs" />
     <Compile Include="Models\HFDIncidentsReadOnlyContext.cs" />
     <Compile Include="Models\HFDServiceLog.cs" />
     <Compile Include="Models\IncidentType.cs" />

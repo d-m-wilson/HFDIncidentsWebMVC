@@ -25,7 +25,7 @@ namespace HFDIncidents.Domain.Models
     public class HFDIncidentsReadOnlyContext : DbContext, IIncidentDataSource
     {
         public HFDIncidentsReadOnlyContext()
-            : base("Name=HFDActiveIncidentsReadOnlyContext")
+            : base("Name=HFDIncidentsReadOnlyContext")
         {
             System.Data.Entity.Database.SetInitializer<Models.HFDIncidentsReadOnlyContext>(null);
         }
