@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HFDIncidents.Domain", "HFDIncidents.Domain\HFDIncidents.Domain.csproj", "{D073A03C-5FBD-445D-AD7B-DC8A63FDB215}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HFDIncidents.Web", "HFDIncidents.Web\HFDIncidents.Web.csproj", "{3C07B6C9-9DE0-490F-9F93-C15724C837DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D073A03C-5FBD-445D-AD7B-DC8A63FDB215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D073A03C-5FBD-445D-AD7B-DC8A63FDB215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D073A03C-5FBD-445D-AD7B-DC8A63FDB215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C07B6C9-9DE0-490F-9F93-C15724C837DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C07B6C9-9DE0-490F-9F93-C15724C837DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C07B6C9-9DE0-490F-9F93-C15724C837DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C07B6C9-9DE0-490F-9F93-C15724C837DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
