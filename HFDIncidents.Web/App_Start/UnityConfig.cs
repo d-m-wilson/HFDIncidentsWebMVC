@@ -1,5 +1,7 @@
-using System.Web.Mvc;
+using HFDIncidents.Domain;
+using HFDIncidents.Domain.Models;
 using Microsoft.Practices.Unity;
+using System.Web.Mvc;
 using Unity.Mvc5;
 
 namespace HFDIncidents.Web
@@ -8,14 +10,21 @@ namespace HFDIncidents.Web
     {
         public static void RegisterComponents()
         {
-			var container = new UnityContainer();
-            
-            // register all your components with the container here
-            // it is NOT necessary to register your controllers
-            
-            // e.g. container.RegisterType<ITestService, TestService>();
-            
+            var container = new UnityContainer();
+
+            container.BindInRequestScope<IIncidentDataSource, HFDIncidentsReadOnlyContext>();
+
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
+        }
+
+        public static void BindInRequestScope<T1, T2>(this IUnityContainer container) where T2 : T1
+        {
+            container.RegisterType<T1, T2>(new HierarchicalLifetimeManager());
+        }
+
+        public static void BindInSingletonScope<T1, T2>(this IUnityContainer container) where T2 : T1
+        {
+            container.RegisterType<T1, T2>(new ContainerControlledLifetimeManager());
         }
     }
 }
