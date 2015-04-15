@@ -147,6 +147,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppSettings.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -210,6 +211,14 @@
     <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Icon.png" />
+    <Content Include="img\green_MarkerH.png" />
+    <Content Include="img\orange_MarkerA.png" />
+    <Content Include="img\paleblue_MarkerE.png" />
+    <Content Include="img\red_MarkerBlank.png" />
+    <Content Include="img\red_MarkerF.png" />
+    <Content Include="img\yellow_MarkerA.png" />
+    <Content Include="img\yellow_MarkerE.png" />
+    <Content Include="Scripts\activeincidents.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jmelosegui.googlemap.js" />
