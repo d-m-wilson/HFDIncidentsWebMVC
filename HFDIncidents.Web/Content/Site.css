@@ -5,6 +5,7 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -21,4 +22,38 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.map-instructions {
+    padding-bottom: 3px;
+}
+
+#pre-map-loading {
+    height: 25px;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span.iw-text-label {
+    font-weight: bold;
+}
+
+#resultsGrid {
+    padding-top: 20px;
+}
+
+#map-data-loading {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 15px;
+    color: White;
+    background-color: #444;
+    padding: 10px;
+    z-index: 100;
 }
