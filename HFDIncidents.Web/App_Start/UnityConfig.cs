@@ -1,7 +1,7 @@
+using System.Web.Mvc;
 using HFDIncidents.Domain;
 using HFDIncidents.Domain.Models;
 using Microsoft.Practices.Unity;
-using System.Web.Mvc;
 using Unity.Mvc5;
 
 namespace HFDIncidents.Web

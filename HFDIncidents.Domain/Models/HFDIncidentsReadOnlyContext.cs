@@ -15,9 +15,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
-using System.Linq;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace HFDIncidents.Domain.Models
@@ -27,7 +25,7 @@ namespace HFDIncidents.Domain.Models
         public HFDIncidentsReadOnlyContext()
             : base("Name=HFDIncidentsReadOnlyContext")
         {
-            System.Data.Entity.Database.SetInitializer<Models.HFDIncidentsReadOnlyContext>(null);
+            Database.SetInitializer<Models.HFDIncidentsReadOnlyContext>(null);
         }
 
         System.Linq.IQueryable<ArchivedIncident> IIncidentDataSource.ArchivedIncidents

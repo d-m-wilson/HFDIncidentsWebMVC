@@ -21,10 +21,10 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using PagedList.EntityFramework;
 using HFDIncidents.Domain;
 using HFDIncidents.Domain.Models;
 using HFDIncidents.Web.ViewModels;
+using PagedList.EntityFramework;
 
 namespace HFDIncidents.Web.Controllers
 {
