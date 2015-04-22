@@ -11,6 +11,9 @@ namespace HFDIncidents.Web
         public const int DefaultPageSize = 10;
         public const int MaxPageSize = 100;
 
+        public const double Latitude = 29.7605;
+        public const double Longitude = -95.3666;
+
         public static readonly IReadOnlyCollection<int> PageSizes;
 
         static DefaultValues()

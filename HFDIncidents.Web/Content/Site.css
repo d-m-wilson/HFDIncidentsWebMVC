@@ -1,11 +1,11 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 0;
     padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-top: 20px;
+    padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -24,8 +24,8 @@ textarea {
     max-width: 280px;
 }
 
-.map-instructions {
-    padding-bottom: 3px;
+#map-instructions {
+    padding-bottom: 10px;
 }
 
 #pre-map-loading {
@@ -56,4 +56,24 @@ span.iw-text-label {
     background-color: #444;
     padding: 10px;
     z-index: 100;
+}
+
+#incident-details-page-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+#dl-incident-details {
+    padding-top: 20px;
+}
+
+#dl-incident-details dd {
+    padding-bottom: 10px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

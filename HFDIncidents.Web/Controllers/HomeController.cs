@@ -1,5 +1,4 @@
-﻿using HFDIncidents.Domain;
-// HFD Incidents
+﻿// HFD Incidents
 // Copyright © 2015 David M. Wilson
 // https://twitter.com/dmwilson_dev
 //
@@ -17,14 +16,15 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Mvc;
-using PagedList;
-using PagedList.EntityFramework;
-using HFDIncidents.Web.ViewModels;
 using System.Data.Entity;
+using System.Linq;
+using System.Net;
+using System.Threading.Tasks;
+using System.Web.Mvc;
+using PagedList.EntityFramework;
+using HFDIncidents.Domain;
+using HFDIncidents.Domain.Models;
+using HFDIncidents.Web.ViewModels;
 
 namespace HFDIncidents.Web.Controllers
 {
@@ -56,7 +56,7 @@ namespace HFDIncidents.Web.Controllers
             return View();
         }
 
-        // GET: ArchivedIncidents/Search
+        // GET: Home/Search
         public async Task<ActionResult> Search(int? itemsPerPage, int? page, string fromDate, string toDate, List<long> types)
         {
             if (!page.HasValue || page.Value < 1)
@@ -127,6 +127,26 @@ namespace HFDIncidents.Web.Controllers
             };
 
             return View(vm);
+        }
+
+        // GET: Home/Details/5
+        public async Task<ActionResult> Details(int? id)
+        {
+            if (!id.HasValue)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            ArchivedIncident archivedIncident = await db.ArchivedIncidents
+                .Where(ai => ai.Id == id)
+                .FirstOrDefaultAsync();
+
+            if (archivedIncident == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(archivedIncident);
         }
 
         protected override void Dispose(bool disposing)

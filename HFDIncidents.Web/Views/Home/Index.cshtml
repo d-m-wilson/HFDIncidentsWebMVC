@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <div id="map-instructions">Select a marker to view information about each incident.</div>
+        <div id="map-instructions">Select a marker to view details about each incident.</div>
         <div id="map-canvas" class="span12">
             <div id="pre-map-loading">Loading...</div>
         </div>
@@ -18,6 +18,8 @@
         var ContentPath = '@(Url.Content("~/"))';
         var GoogleMapsKey = '@(AppSettings.GoogleMapsKey)';
         var IncidentsServiceUrl = '@(AppSettings.IncidentsServiceUrl)';
+        var DefaultLatitude = @(DefaultValues.Latitude);
+        var DefaultLongitude = @(DefaultValues.Longitude);
     </script>
     <script src="@Url.Content("~/Scripts/activeincidents.js")"></script>
 }

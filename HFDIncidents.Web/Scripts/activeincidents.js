@@ -14,6 +14,8 @@ var google = google || {};
     var contentPath = ContentPath || '';
     var webServiceUrl = IncidentsServiceUrl || '';
     var googleMapsKey = GoogleMapsKey || '';
+    var centerLatitude = DefaultLatitude || 29.7605;
+    var centerLongitude = DefaultLongitude || -95.3666;
 
     var defaultMapIconImage = contentPath + 'img/red_MarkerBlank.png';
 
@@ -21,7 +23,7 @@ var google = google || {};
 
         var mapOptions = {
             zoom: 10,
-            center: { lat: 29.772315, lng: -95.37207 }
+            center: { lat: centerLatitude, lng: centerLongitude }
         };
 
         mapDiv = document.getElementById('map-canvas');
@@ -39,6 +41,12 @@ var google = google || {};
         });
 
         fetchIncidents();
+
+        if (trafficLayer === null) {
+            trafficLayer = new google.maps.TrafficLayer();
+            trafficLayer.setMap(map);
+            setInterval(reloadTiles, 60000);
+        }
     }
 
     function fetchIncidents() {
@@ -53,12 +61,6 @@ var google = google || {};
             setTimeout(hideLoadingMessage, 100);
             setTimeout(fetchIncidents, 300000);
         });
-
-        if (trafficLayer === null) {
-            trafficLayer = new google.maps.TrafficLayer();
-            trafficLayer.setMap(map);
-            setInterval(reloadTiles, 60000);
-        }
     }
 
     function reloadTiles() {
@@ -163,7 +165,7 @@ var google = google || {};
     function onWindowResize() {
         var viewportHeight = $(window).height();
         var headerHeight = $('#nav-bar-header').height();
-        var mapHeight = Math.ceil((viewportHeight - headerHeight) * 0.79);
+        var mapHeight = Math.ceil((viewportHeight - headerHeight) * 0.73);
 
         if (jqMapDiv !== null) {
             jqMapDiv.height(mapHeight);
