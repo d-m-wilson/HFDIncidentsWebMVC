@@ -220,7 +220,7 @@ var google = google || {};
             typeImage = contentPath + 'img/paleblue_MarkerE.png';
             zIndex = 1;
         }
-        else if (itype.contains('FIRE') && (itype != 'CHECK FOR FIRE')) {
+        else if (itype.contains('FIRE') && (itype !== 'CHECK FOR FIRE')) {
             typeImage = contentPath + 'img/red_MarkerF.png';
         }
         else if (itype.contains('MOTOR VEHICLE')
@@ -244,7 +244,7 @@ var google = google || {};
             typeImage = defaultMapIconImage;
         }
 
-        if (typeImage == String.empty) {
+        if (typeImage === String.empty) {
             typeImage = defaultMapIconImage;
         }
 
