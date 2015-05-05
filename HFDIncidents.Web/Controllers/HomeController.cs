@@ -102,8 +102,8 @@ namespace HFDIncidents.Web.Controllers
 
             if (types == null)
             {
-                incidentTypesListItems = incidentTypes.Select(it => new SelectListItem { Text = it.Name, Value = it.Id.ToString(), Selected = it.Id > 1 });
-                types = incidentTypes.Where(it => it.Id > 1).Select(it => it.Id).ToList();
+                incidentTypesListItems = incidentTypes.Select(it => new SelectListItem { Text = it.Name, Value = it.Id.ToString(), Selected = it.Id == DefaultValues.DefaultIncidentTypeId });
+                types = incidentTypes.Where(it => it.Id == DefaultValues.DefaultIncidentTypeId).Select(it => it.Id).ToList();
             }
             else
             {

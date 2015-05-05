@@ -14,6 +14,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
+using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
 
@@ -30,9 +31,13 @@ namespace HFDIncidents.Web
 
         public static readonly IReadOnlyCollection<int> PageSizes;
 
+        public static long DefaultIncidentTypeId;
+
         static DefaultValues()
         {
             PageSizes = new List<int>(new int[] { 10, 20, 30, 50, 75, 100 }).AsReadOnly();
+
+            Int64.TryParse(AppSettings.DefaultIncidentTypeNumber, out DefaultIncidentTypeId);
         }
 
         public static SelectList ItemsPerPageList
