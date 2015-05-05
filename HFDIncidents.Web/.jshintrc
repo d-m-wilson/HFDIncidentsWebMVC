@@ -82,11 +82,12 @@
     "white"         : false,    // true: Check against strict whitespace and indentation rules
 
     // Custom Globals
-    "globals"       : {
-        "ContentPath": false,
-        "IncidentsServiceUrl": false,
-        "GoogleMapsKey": false,
-        "DefaultLatitude": false,
-        "DefaultLongitude": false
+    "globals" : {
+        "ga"                  : false, // for Google Analytics
+        "ContentPath"         : false,
+        "IncidentsServiceUrl" : false,
+        "GoogleMapsKey"       : false,
+        "DefaultLatitude"     : false,
+        "DefaultLongitude"    : false
     }
 }

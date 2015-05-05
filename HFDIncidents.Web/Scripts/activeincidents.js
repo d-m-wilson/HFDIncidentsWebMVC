@@ -53,6 +53,12 @@ var google = google || {};
 
         showLoadingMessage();
 
+        try {
+            if (ga !== undefined && ga !== null) {
+                ga('send', 'event', 'activeincidents', 'fetch', {'nonInteraction': 1});
+            }
+        } catch (e) { }
+
         $.getJSON(webServiceUrl, function (json) {
 
             incidents = json;
@@ -115,6 +121,12 @@ var google = google || {};
 
             infowindow.setContent(html);
             infowindow.open(map, this);
+
+            if (ga !== undefined && ga !== null) {
+                try {
+                    ga('send', 'event', 'mapmarker', 'click', 'activeincidents');
+                } catch (e) { }
+            }
         });
     }
 
