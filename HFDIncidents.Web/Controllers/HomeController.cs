@@ -95,7 +95,7 @@ namespace HFDIncidents.Web.Controllers
             }
 
             var incidentTypes = await db.IncidentTypes
-                .OrderBy(it => it.Id)
+                .OrderBy(it => it.Name)
                 .ToListAsync();
 
             IEnumerable<SelectListItem> incidentTypesListItems;
@@ -113,7 +113,7 @@ namespace HFDIncidents.Web.Controllers
             var incidentsQuery = db.ArchivedIncidents
                 .Where(ai => ai.CallTimeOpened >= from && ai.CallTimeOpened <= to && types.Contains(ai.IncidentTypeId.Value));
 
-            var pagedList = await incidentsQuery.OrderBy(i => i.Id).ToPagedListAsync(page.Value, itemsPerPage.Value);
+            var pagedList = await incidentsQuery.OrderBy(i => i.CallTimeOpened).ToPagedListAsync(page.Value, itemsPerPage.Value);
 
             var vm = new SearchViewModel
             {
