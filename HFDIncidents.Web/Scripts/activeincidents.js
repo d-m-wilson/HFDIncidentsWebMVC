@@ -11,6 +11,7 @@ var google = google || {};
     var markers;
     var jqMapDiv = null;
     var jqLoadingMsg = null;
+    var incidentsFirstLoad = true;
     var contentPath = ContentPath || '';
     var webServiceUrl = IncidentsServiceUrl || '';
     var googleMapsKey = GoogleMapsKey || '';
@@ -53,11 +54,15 @@ var google = google || {};
 
         showLoadingMessage();
 
-        try {
+        if (incidentsFirstLoad === true) {
+            incidentsFirstLoad = false;
+        } else {
             if (ga !== undefined && ga !== null) {
-                ga('send', 'event', 'activeincidents', 'fetch', {'nonInteraction': 1});
+                try {
+                    ga('send', 'event', 'activeincidents', 'fetch', { 'nonInteraction': 1 });
+                } catch (e) { }
             }
-        } catch (e) { }
+        }
 
         $.getJSON(webServiceUrl, function (json) {
 
