@@ -257,6 +257,9 @@ var google = google || {};
             || itype.contains('HAZMAT')) {
             typeImage = contentPath + 'img/green_MarkerH.png';
         }
+        else if (itype.contains('WATER RESCUE')) {
+            typeImage = contentPath + 'img/blue_MarkerR.png';
+        }
         else {
             typeImage = defaultMapIconImage;
         }
