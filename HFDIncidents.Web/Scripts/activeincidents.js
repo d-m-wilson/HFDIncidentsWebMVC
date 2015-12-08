@@ -238,7 +238,7 @@ var google = google || {};
             zIndex = 1;
         }
         else if (itype.startsWith('CRASH/')
-            || itype.startsWith('TRAFFIC/')) {
+            || itype.startsWith('TRAFFIC HAZARD/')) {
             typeImage = contentPath + 'img/yellow_MarkerA.png';
         }
         else if (itype.contains('FIRE') && (itype !== 'CHECK FOR FIRE')) {
