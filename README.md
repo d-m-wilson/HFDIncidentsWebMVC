@@ -1,12 +1,12 @@
 # HFDIncidentsWebMVC
 A web application for visualizing incident data from the Houston Fire Department and the Houston Police Department <sup>[1](#footnote1)</sup> using [Google Maps](https://developers.google.com/maps/web/). The server-side components can be found [here](https://github.com/d-m-wilson/HFDActiveIncidentsBackend/).
 
-<a name="footnote1">1</a>: HPD incidents are currently limited to motor vehicle accidents and traffic hazards.
-
 [![Screenshot](http://i.imgur.com/BE4f80Dl.png)](http://i.imgur.com/BE4f80D.png)
 
 Copyright © 2016 [David M. Wilson](http://dmwilson.info/Home/About)  
 Licensed under the [GNU GPL v3](https://github.com/d-m-wilson/HFDIncidentsWebMVC/blob/master/LICENSE)
+
+<a name="footnote1">1</a>. HPD incidents are currently limited to motor vehicle accidents and traffic hazards.
 
 #### Attributions
 [Coloured Markers for Google Maps](http://www.benjaminkeen.com/google-maps-coloured-markers/)  
