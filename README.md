@@ -11,15 +11,18 @@ Licensed under the [GNU GPL v3](https://github.com/d-m-wilson/HFDIncidentsWebMVC
 Copyright © 2007 Benjamin Keen  
 Available under MIT or GPL licenses
 
-[Google Map Control for ASP.NET MVC](https://github.com/jmelosegui/GooglemapMvc) [NuGet Package](https://www.nuget.org/packages/Jmelosegui.Mvc.Googlemap/0.5.0/)  
+[Google Map Control for ASP.NET MVC](https://github.com/jmelosegui/GooglemapMvc)  
+[NuGet Package](https://www.nuget.org/packages/Jmelosegui.Mvc.Googlemap/0.5.0/)  
 Copyright © 2015 by [J. M. Elosegui](http://www.jmelosegui.com/map/)  
 Licensed under the GNU GPL v2
 
-[PagedList and PagedList.Mvc](https://github.com/troygoode/PagedList) [NuGet Package 1](https://www.nuget.org/packages/PagedList/1.17.0/) [NuGet Package 2](https://www.nuget.org/packages/PagedList.Mvc/4.5.0/)  
+[PagedList and PagedList.Mvc](https://github.com/troygoode/PagedList)  
+[NuGet Package 1](https://www.nuget.org/packages/PagedList/1.17.0/) [NuGet Package 2](https://www.nuget.org/packages/PagedList.Mvc/4.5.0/)  
 Copyright © 2013 [Troy Goode](https://github.com/troygoode)  
 Licensed under the MIT license
 
-[PagedList.EntityFramework](https://github.com/NickStrupat/PagedList.EntityFramework) [NuGet Package](https://www.nuget.org/packages/PagedList.EntityFramework/1.0.1/)  
+[PagedList.EntityFramework](https://github.com/NickStrupat/PagedList.EntityFramework)  
+[NuGet Package](https://www.nuget.org/packages/PagedList.EntityFramework/1.0.1/)  
 Copyright © 2015 [Nick Strupat](https://github.com/NickStrupat)  
 License not specified
 
