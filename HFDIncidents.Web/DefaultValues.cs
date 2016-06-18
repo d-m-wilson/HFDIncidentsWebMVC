@@ -23,8 +23,8 @@ namespace HFDIncidents.Web
     public static class DefaultValues
     {
         public const int MinPageSize = 10;
-        public const int DefaultPageSize = 10;
-        public const int MaxPageSize = 100;
+        public const int DefaultPageSize = 50;
+        public const int MaxPageSize = 300;
 
         public const double Latitude = 29.7605;
         public const double Longitude = -95.3666;
@@ -35,7 +35,7 @@ namespace HFDIncidents.Web
 
         static DefaultValues()
         {
-            PageSizes = new List<int>(new int[] { 10, 20, 30, 50, 75, 100 }).AsReadOnly();
+            PageSizes = new List<int>(new int[] { 10, 25, 50, 100, 200 }).AsReadOnly();
 
             Int64.TryParse(AppSettings.DefaultIncidentTypeNumber, out DefaultIncidentTypeId);
         }
